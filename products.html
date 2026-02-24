@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VOLTEIQ Series - Kessey Technologies</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2777B4",
+                        "accent": "#2373B4",
+                        "text-primary": "#444444",
+                    },
+                    fontFamily: {
+                        "sans": ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "custom": "6px",
+                    },
+                    spacing: {
+                        "1": "4px", "2": "8px", "3": "12px", "4": "16px", "5": "20px",
+                        "6": "24px", "8": "32px", "10": "40px", "12": "48px", "16": "64px",
+                    }
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body { @apply font-sans bg-white text-text-primary text-[18px] leading-relaxed; }
+            h1 { @apply text-[66px] leading-[1.1] font-bold; }
+            h2 { @apply text-[64px] leading-[1.1] font-bold; }
+        }
+        .rounded-custom { border-radius: 6px !important; }
+        .btn-primary { @apply bg-primary hover:bg-accent text-white px-8 py-4 rounded-custom font-semibold transition-all; }
+        .btn-outline { @apply bg-white border border-primary text-primary px-8 py-4 rounded-custom font-semibold hover:bg-slate-50 transition-all; }
+        .card { @apply bg-white border border-slate-100 p-8 rounded-custom shadow-sm; }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 w-full bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Kessey Logo" class="h-10 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSN3fmWUP0riULz4l1TpGypw9OX2hAkDvFMtmGI3hAD8R_qsWrmZztRoz4sAe7sTdVIF-SKi9SIaAbAvTo9_7hLVnOekjNCKAfmhEmtHpxtUHpLqMYAtZZuH__hIsUuBOsGAO8lBi7FzNQT5MZ7HFNZJo4JJr8qMRAoF804JxACzuWretYirBDgQbG6XgSRD4ZQ0N4w8-2WNcn6J8QAUAABIpATqSokKj5q0yu2kARlGX83YwA94_5hr0Bfgjh2ku8iG8Y3FjgTL4" />
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors text-primary"
+                    href="products.html">Products</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="faq.html">Support</a>
+                <button
+                    class="bg-primary hover:bg-accent text-white px-6 py-2.5 rounded-custom text-sm font-semibold transition-all">Contact
+                    Now</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-primary py-16 text-center text-white">
+        <h2 class="text-5xl font-black uppercase tracking-tight text-white mb-2">VOLTEIQ SERIES</h2>
+    </div>
+
+    <div
+        class="max-w-7xl mx-auto px-6 py-4 text-xs font-semibold text-slate-400 uppercase tracking-widest border-b border-slate-100">
+        Home > Products > <span class="text-slate-600">VOLTEIQ Series</span>
+    </div>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h1 class="mb-8">VOLTEIQ: <br /> <span class="text-primary">Precision Voltage Control</span></h1>
+                    <p class="text-slate-500 mb-12">
+                        The VOLTEIQ series represents the pinnacle of Kessey's engineering in power stabilization.
+                        Designed for environments with extreme grid instability, these solutions ensure constant
+                        performance and device longevity.
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="btn-primary">Explore Catalogue</button>
+                        <button class="btn-outline">Download Brochure</button>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-custom">
+                    <img alt="VOLTEIQ Device" class="w-full h-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvrLhk1SAR946fyZjkE4XOLvBInPVGtS5biqzRopX69rznL6cUcajYSS_fmxMz2YC7CGuePPewKLkym_pN5RYWY-7jp_t0HuoI9oV8IfaJhdsJ6-4IWzuSPliLubtNiFbFtC6QRXGRoDFXzTmBBwHS9UwF85MEc2v3ZKvz9WYoDQMrG4hfXnfecqcoFh-i1nIcHX2TlTlYeSmAndixvR2EiqKWsGSnqrRL6LSlttIR4XfIN3182h_v-NqyQLOTuNg2PO-ReQbq1xg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="text-[12px] uppercase font-bold text-primary mb-4 block tracking-widest">Product Lineup</span>
+            <h2 class="mb-16">Available Solutions</h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="border border-slate-100 rounded-custom overflow-hidden flex flex-col h-full bg-slate-50/50">
+                    <div class="p-8 flex justify-center bg-white"><img
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvrLhk1SAR946fyZjkE4XOLvBInPVGtS5biqzRopX69rznL6cUcajYSS_fmxMz2YC7CGuePPewKLkym_pN5RYWY-7jp_t0HuoI9oV8IfaJhdsJ6-4IWzuSPliLubtNiFbFtC6QRXGRoDFXzTmBBwHS9UwF85MEc2v3ZKvz9WYoDQMrG4hfXnfecqcoFh-i1nIcHX2TlTlYeSmAndixvR2EiqKWsGSnqrRL6LSlttIR4XfIN3182h_v-NqyQLOTuNg2PO-ReQbq1xg"
+                            class="h-48 object-contain"></div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-6">Automatic Buck Regulator</h3>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Input
+                                Range: 180V - 280V</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>High-Efficiency
+                                Toroidal Core</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Zero-Cross
+                                Switching Tech</li>
+                        </ul>
+                        <button class="w-full btn-primary py-3 text-sm mb-3">View Details</button>
+                        <button
+                            class="w-full text-[11px] font-bold uppercase py-3 border border-slate-200 rounded-custom hover:bg-white transition-colors bg-white">Technical
+                            Specs</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="border border-slate-100 rounded-custom overflow-hidden flex flex-col h-full bg-slate-50/50">
+                    <div class="p-8 flex justify-center bg-white"><img
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCensz4C7nLnO8cJlwDNqOMmYWSphya6QhhXe3cvzMgp-uHMsHEqLT4GKfAjcx1-IEOgJfynoBpC5hWc_nAH07W6WWCjVuALrxlxymLNjA5QkmAStbmRLvuF3AffD73C5M8UkZySOUBZcq74dszSGec6_sbeSjGYqqmNyEyVZ9JTFLkEiMUO-QuKPoiBr2JV_wJeMohsklfwhIBScnjQurOAx7AuOn0QD3o1f8xAh5NWN8bI8J9PTBob-u4MRLndKTEJEEvYeMBWcc"
+                            class="h-48 object-contain"></div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-6">Precision Voltage Stabilizer</h3>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>1.0%
+                                Output Accuracy</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Digital
+                                CPU Control Logic</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Wide
+                                Frequency Compatibility</li>
+                        </ul>
+                        <button class="w-full btn-primary py-3 text-sm mb-3">View Details</button>
+                        <button
+                            class="w-full text-[11px] font-bold uppercase py-3 border border-slate-200 rounded-custom hover:bg-white transition-colors bg-white">Technical
+                            Specs</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="border border-slate-100 rounded-custom overflow-hidden flex flex-col h-full bg-slate-50/50">
+                    <div class="p-8 flex justify-center bg-white"><img
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGA0lgzxWit8dTo-eP8_uAr8JP1k57Mi81umkL4py8rfAuzVrk0TCzkRY1OqznxIln4nqCVU60ntmAeiouGMOH-ucw7GTcH0e_hM38aT8A77ZcjGsuaL--pjKfmCR8ljYLooRnE49_dTyfc8GJpHP7WiizBbEQ5oP2mqHGwJpqblPN0p8WM0GVC6mhTn-rHVKxgEpXs5z30G_J8Ydv--OiORN_1awupawK4RWIy6H6t4CLFNhbUPi1DN7PG-9iDlQyERuMCI000PI"
+                            class="h-48 object-cover grayscale"></div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-6">Servo Motor Regulator</h3>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Heavy
+                                Duty Servo Mechanism</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Phase
+                                Failure Protection</li>
+                            <li class="flex items-center text-sm text-slate-600 font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg mr-3">check_circle</span>Copper
+                                Wound Transformer</li>
+                        </ul>
+                        <button class="w-full btn-primary py-3 text-sm mb-3">View Details</button>
+                        <button
+                            class="w-full text-[11px] font-bold uppercase py-3 border border-slate-200 rounded-custom hover:bg-white transition-colors bg-white">Technical
+                            Specs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="mb-20">Why VOLTEIQ?</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-10 rounded-custom shadow-sm flex flex-col items-center">
+                    <div class="bg-primary/10 p-5 rounded-custom mb-8"><span
+                            class="material-symbols-outlined text-primary text-3xl">bolt</span></div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Intelligent Cut-off</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Automatically disconnects during unsafe surges to
+                        protect downstream equipment.</p>
+                </div>
+                <div class="bg-white p-10 rounded-custom shadow-sm flex flex-col items-center">
+                    <div class="bg-primary/10 p-5 rounded-custom mb-8"><span
+                            class="material-symbols-outlined text-primary text-3xl">thermostat</span></div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Thermal Protection</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Advanced heat sensors prevent overheating during
+                        heavy industrial load cycles.</p>
+                </div>
+                <div class="bg-white p-10 rounded-custom shadow-sm flex flex-col items-center">
+                    <div class="bg-primary/10 p-5 rounded-custom mb-8"><span
+                            class="material-symbols-outlined text-primary text-3xl">analytics</span></div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Digital Monitoring</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Real-time LCD diagnostics provide clear insight
+                        into input and output parameters.</p>
+                </div>
+                <div class="bg-white p-10 rounded-custom shadow-sm flex flex-col items-center">
+                    <div class="bg-primary/10 p-5 rounded-custom mb-8"><span
+                            class="material-symbols-outlined text-primary text-3xl">grid_view</span></div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Modular Design</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Easy maintenance and component replacement for
+                        minimized industrial downtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-white">Building Safer, Smarter Electrical Systems, Together.</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button
+                    class="bg-primary hover:bg-accent text-white px-10 py-4 rounded-custom font-bold transition-all">Get
+                    a Quote</button>
+                <button
+                    class="bg-white/5 border border-white/20 hover:bg-white/10 text-white px-10 py-4 rounded-custom font-bold transition-all">Partner
+                    With Us</button>
+                <button
+                    class="bg-white/5 border border-white/20 hover:bg-white/10 text-white px-10 py-4 rounded-custom font-bold transition-all">Support
+                    Center</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-24 pb-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 text-left">
+                <div class="col-span-1">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSN3fmWUP0riULz4l1TpGypw9OX2hAkDvFMtmGI3hAD8R_qsWrmZztRoz4sAe7sTdVIF-SKi9SIaAbAvTo9_7hLVnOekjNCKAfmhEmtHpxtUHpLqMYAtZZuH__hIsUuBOsGAO8lBi7FzNQT5MZ7HFNZJo4JJr8qMRAoF804JxACzuWretYirBDgQbG6XgSRD4ZQ0N4w8-2WNcn6J8QAUAABIpATqSokKj5q0yu2kARlGX83YwA94_5hr0Bfgjh2ku8iG8Y3FjgTL4"
+                        class="h-10 mb-8 grayscale opacity-50">
+                    <p class="text-xs text-slate-400 font-medium">Providing world-class power stabilization and energy
+                        management solutions for industrial and domestic applications.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase mb-8 tracking-widest text-slate-900">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            About Kessey</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer text-primary">
+                            Our Products</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Careers</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Media Center</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase mb-8 tracking-widest text-slate-900">Support</h4>
+                    <ul class="space-y-4">
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Technical Documentation</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Warranty Registration</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Service Centers</li>
+                        <li
+                            class="text-xs font-medium text-slate-500 hover:text-primary transition-colors cursor-pointer">
+                            Contact Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase mb-8 tracking-widest text-slate-900">Headquarters</h4>
+                    <p class="text-xs font-medium text-slate-500 mb-4">123 Industrial Park, Sector 4 Electronic City,
+                        Tech Hub Bangalore, KA 560100</p>
+                    <a href="mailto:info@kessey.com" class="text-xs font-bold text-primary">info@kessey.com</a>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest items-center flex">© 2024
+                    Kessey Technologies Pvt. Ltd. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <span class="material-symbols-outlined text-slate-300 text-lg">public</span>
+                    <span class="material-symbols-outlined text-slate-300 text-lg">account_circle</span>
+                    <span class="material-symbols-outlined text-slate-300 text-lg">verified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
