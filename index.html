@@ -2,162 +2,404 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kessey Technologies | Professional Engineering Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kessey Technologies - Engineering Intelligent Electrical Solutions</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2777B4",
+                        "accent": "#2373B4",
+                        "text-primary": "#444444",
+                    },
+                    fontFamily: {
+                        "sans": ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "custom": "6px",
+                    },
+                    spacing: {
+                        "1": "4px",
+                        "2": "8px",
+                        "3": "12px",
+                        "4": "16px",
+                        "5": "20px",
+                        "6": "24px",
+                        "8": "32px",
+                        "10": "40px",
+                        "12": "48px",
+                        "16": "64px",
+                        "20": "80px",
+                        "24": "96px",
+                    }
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans bg-white text-text-primary text-[18px] leading-relaxed;
+            }
+            h1 {
+                @apply text-[66px] leading-[1.1] font-bold;
+            }
+            h2 {
+                @apply text-[64px] leading-[1.1] font-bold;
+            }
+        }
+        .rounded-custom {
+            border-radius: 6px !important;
+        }
+        .btn-primary {
+            @apply bg-primary hover:bg-accent text-white px-8 py-4 rounded-custom font-semibold transition-all;
+        }
+        .btn-outline {
+            @apply bg-white border border-primary text-primary px-8 py-4 rounded-custom font-semibold hover:bg-slate-50 transition-all;
+        }
+        .card {
+            @apply bg-white border border-slate-100 p-8 rounded-custom shadow-sm;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">KESSEY</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#products">Products</a>
-                <a href="#manufacturing">Manufacturing</a>
-                <a href="#contact" class="btn">Get Started</a>
+    <header class="sticky top-0 z-50 w-full bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Kessey Technologies Logo" class="h-10 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSN3fmWUP0riULz4l1TpGypw9OX2hAkDvFMtmGI3hAD8R_qsWrmZztRoz4sAe7sTdVIF-SKi9SIaAbAvTo9_7hLVnOekjNCKAfmhEmtHpxtUHpLqMYAtZZuH__hIsUuBOsGAO8lBi7FzNQT5MZ7HFNZJo4JJr8qMRAoF804JxACzuWretYirBDgQbG6XgSRD4ZQ0N4w8-2WNcn6J8QAUAABIpATqSokKj5q0yu2kARlGX83YwA94_5hr0Bfgjh2ku8iG8Y3FjgTL4" />
             </div>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container" style="display: flex; align-items: center; gap: 40px;">
-            <div class="hero-content">
-                <h1>Professional Engineering Solutions</h1>
-                <p>Delivering high-precision manufacturing and innovative ecosystem support for technical professionals
-                    and global industries.</p>
-                <div style="margin-top: 32px;">
-                    <a href="#products" class="btn">Explore Products</a>
-                    <a href="#about" style="margin-left: 20px; font-weight: 500;">Learn More →</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
-                    alt="Advanced Engineering" style="width: 100%; height: auto; border-radius: 6px;">
-            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Brand</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Products</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Founders</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Vision</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Care</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+                <button
+                    class="bg-primary hover:bg-accent text-white px-6 py-2.5 rounded-custom text-sm font-semibold transition-all">Contact
+                    Now</button>
+            </nav>
         </div>
     </header>
 
-    <section id="about" style="background-color: #fcfcfc;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 60px;">Core Principles</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    <section class="relative pt-24 pb-32">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="mb-8">Engineering Intelligent <br /> <span class="text-primary">Electrical Solutions</span></h1>
+            <p class="text-2xl font-semibold mb-6">for Modern Power Systems</p>
+            <p class="max-w-3xl mx-auto mb-12 text-slate-500">
+                Kessey designs, manufactures, and delivers future-ready electrical products built for safety, stability,
+                and evolving industrial intelligence.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="btn-primary">Explore Our Solutions</button>
+                <button class="btn-outline">Contact Kessey</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
+                <div>
+                    <span
+                        class="inline-block bg-primary/10 text-primary text-[12px] font-bold px-4 py-1.5 rounded-custom uppercase mb-8 tracking-widest">Origins</span>
+                    <h2 class="mb-8">Pioneering <br /> the <span class="text-primary">Grid.</span></h2>
+                </div>
+                <div class="space-y-6 text-slate-600">
+                    <p><strong>KESSEY Technologies Pvt. Ltd.</strong> is an Indian electronics manufacturing company
+                        focused on developing reliable, intelligent, and application-driven electrical solutions for
+                        homes, buildings, and infrastructure.</p>
+                    <p>With a strong foundation in electrical engineering and manufacturing discipline, Kessey addresses
+                        real-world challenges that are becoming increasingly critical in modern power networks, such as
+                        voltage instability, grid fluctuation, and electrical safety.</p>
+                    <p>KESSEY operates as a <strong>multi-brand organisation</strong>, creating specialised product
+                        brands to solve specific electrical problems with depth, clarity, and engineering focus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <span class="text-[12px] uppercase font-bold text-slate-400 block mb-4 tracking-widest">Core
+                Principles</span>
+            <h2 class="mb-6">Engineering <span class="text-primary">Stability.</span></h2>
+            <p class="font-medium">Designed for Today's Grids. Built for Tomorrow.</p>
+            <p class="max-w-3xl mx-auto mt-6 text-sm text-slate-500">Electrical infrastructure is changing rapidly,
+                driven by rooftop solar, distributed generation, and higher load sensitivity.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="card">
-                    <h3 style="margin-bottom: 12px; color: var(--primary);">Precision</h3>
-                    <p>Utmost accuracy in every component we manufacture, tailored for complex engineering environments.
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">bolt</span>
+                    <h3 class="text-xl font-bold mb-3">Deep Engineering</h3>
+                    <p class="text-sm text-slate-500">Profound understanding of grid & electrical dynamics.</p>
+                </div>
+                <div class="card">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">architecture</span>
+                    <h3 class="text-xl font-bold mb-3">Rooted Design</h3>
+                    <p class="text-sm text-slate-500">Product design that accounts for on-ground conditions.</p>
+                </div>
+                <div class="card">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">security</span>
+                    <h3 class="text-xl font-bold mb-3">Intelligent Protection</h3>
+                    <p class="text-sm text-slate-500">Centralized solutions for electrical infrastructure safety.</p>
+                </div>
+                <div class="card">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">history</span>
+                    <h3 class="text-xl font-bold mb-3">Long-term Reliability</h3>
+                    <p class="text-sm text-slate-500">Engineering for durability and scale over short-term fixes.</p>
+                </div>
+            </div>
+            <p class="text-center mt-12 text-sm text-slate-500 font-medium">Every Kessey solution is developed to be
+                future-ready, scalable, and dependable.</p>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span
+                        class="inline-block bg-primary text-white text-[12px] font-bold px-4 py-1.5 rounded-custom mb-8 tracking-widest uppercase">Our
+                        Product Brands</span>
+                    <p class="text-sm text-slate-500 mb-6 max-w-sm">KESSEY develops focused product brands, each created
+                        to solve a distinct electrical challenge.</p>
+                    <h2 class="text-5xl font-black tracking-tight mb-4">VOLTEIQ.</h2>
+                    <p class="text-3xl font-bold text-primary mb-8">Voltage Intelligence.</p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">Flagship brand VOLTEIQ redefines electrical stability
+                        through AI-ready products that intelligently adapt to power fluctuations.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center text-base font-medium"><span
+                                class="material-symbols-outlined text-primary text-2xl mr-4">electric_bolt</span>Centralized
+                            protection for infrastructure</li>
+                        <li class="flex items-center text-base font-medium"><span
+                                class="material-symbols-outlined text-primary text-2xl mr-4">electric_bolt</span>Engineered
+                            for solar-rich environments</li>
+                        <li class="flex items-center text-base font-medium"><span
+                                class="material-symbols-outlined text-primary text-2xl mr-4">electric_bolt</span>Dynamic
+                            energy efficiency regulation</li>
+                    </ul>
+                    <button class="btn-primary">Explore VOLTEIQ Solutions</button>
+                </div>
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-6">
+                        <img alt="Industrial Facility" class="rounded-custom w-full h-[450px] object-cover grayscale"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAmGFy5w8qVt6WdLqih9rJgPxdlXTmX2FG7kE_OGLSptN44yxOj6tQWLBwJomr7Fz8_MuSgmKjkvjd5Y432LBaKmpaHvzy1cOfNN0odiY57LjwE5MMshGaa0V2xGFo-uyT7A0mI66tQftMfdKHwhRF94lUPYvTF4WQ2sRMeSHZrxSGiEEFo3z18Z92hY3MwdE9YUYEPINNQ3fa1eoZQ8R9sx5AXeblhpGZAWbHWA9B8YwFTCw-4fAOuBZmiiIws2gh8Zfr2An8Z2o" />
+                        <div class="flex flex-col gap-6">
+                            <div class="bg-primary text-white p-8 rounded-custom flex flex-col justify-end h-1/2">
+                                <p class="font-bold text-2xl mb-2 uppercase">AVR</p>
+                                <p class="text-xs opacity-80 uppercase tracking-widest">Stabilization</p>
+                            </div>
+                            <div class="bg-accent text-white p-8 rounded-custom flex flex-col justify-end h-1/2">
+                                <p class="font-bold text-2xl mb-2 uppercase">ABR</p>
+                                <p class="text-xs opacity-80 uppercase tracking-widest">Intelligent Logic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <span class="text-[12px] uppercase font-bold text-slate-400 mb-2 block tracking-widest">Precision
+                        Hardware</span>
+                    <h2 class="text-4xl uppercase tracking-tight">Volteiq Products</h2>
+                    <p class="text-slate-500 mt-4">Centralized Intelligent Voltage Protection Solutions</p>
+                </div>
+                <a class="text-sm font-bold uppercase flex items-center text-primary hover:underline" href="#">All
+                    Products <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span></a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div
+                    class="bg-white rounded-custom overflow-hidden border border-slate-100 flex flex-col sm:flex-row h-full">
+                    <img alt="Industrial Control Unit" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover grayscale"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvrLhk1SAR946fyZjkE4XOLvBInPVGtS5biqzRopX69rznL6cUcajYSS_fmxMz2YC7CGuePPewKLkym_pN5RYWY-7jp_t0HuoI9oV8IfaJhdsJ6-4IWzuSPliLubtNiFbFtC6QRXGRoDFXzTmBBwHS9UwF85MEc2v3ZKvz9WYoDQMrG4hfXnfecqcoFh-i1nIcHX2TlTlYeSmAndixvR2EiqKWsGSnqrRL6LSlttIR4XfIN3182h_v-NqyQLOTuNg2PO-ReQbq1xg" />
+                    <div class="p-10 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] uppercase font-bold text-primary mb-4 block tracking-widest">ABR
+                                Series</span>
+                            <h3 class="text-2xl font-bold mb-6">Automatic Buck Regulators</h3>
+                            <ul class="space-y-3 mb-10">
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Over-voltage protection
+                                </li>
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Under-voltage protection
+                                </li>
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Grid supply
+                                    auto-regulation</li>
+                            </ul>
+                        </div>
+                        <button
+                            class="w-full text-xs font-bold uppercase py-4 border border-slate-200 rounded-custom hover:bg-slate-50 transition-colors">Specifications</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-custom overflow-hidden border border-slate-100 flex flex-col sm:flex-row h-full">
+                    <img alt="Voltage Regulation Unit" class="w-full sm:w-1/2 h-64 sm:h-auto object-cover grayscale"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCensz4C7nLnO8cJlwDNqOMmYWSphya6QhhXe3cvzMgp-uHMsHEqLT4GKfAjcx1-IEOgJfynoBpC5hWc_nAH07W6WWCjVuALrxlxymLNjA5QkmAStbmRLvuF3AffD73C5M8UkZySOUBZcq74dszSGec6_sbeSjGYqqmNyEyVZ9JTFLkEiMUO-QuKPoiBr2JV_wJeMohsklfwhIBScnjQurOAx7AuOn0QD3o1f8xAh5NWN8bI8J9PTBob-u4MRLndKTEJEEvYeMBWcc" />
+                    <div class="p-10 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] uppercase font-bold text-primary mb-4 block tracking-widest">3-Step
+                                AVR</span>
+                            <h3 class="text-2xl font-bold mb-6">Voltage Regulators</h3>
+                            <ul class="space-y-3 mb-10">
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Fluctuating supply
+                                    regulation</li>
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Rooftop solar integration
+                                </li>
+                                <li class="text-sm text-slate-500 flex items-center"><span
+                                        class="w-2 h-2 bg-primary/40 rounded-full mr-3"></span>Centralized protection
+                                </li>
+                            </ul>
+                        </div>
+                        <button
+                            class="w-full text-xs font-bold uppercase py-4 border border-slate-200 rounded-custom hover:bg-slate-50 transition-colors">Specifications</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-[12px] uppercase font-bold text-white/70 mb-6 block tracking-widest">Ecosystem</span>
+            <h2 class="mb-6 text-white">Serving the Entire Electrical Ecosystem</h2>
+            <p class="text-white/60 text-sm mb-16 uppercase font-bold tracking-widest">KESSEY solutions are built for:
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-custom flex flex-col items-center">
+                    <span class="material-symbols-outlined text-white mb-8 text-4xl">home</span>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Residential</h3>
+                    <p class="text-xs text-white/70 leading-relaxed">Seeking appliance protection and long-term
+                        electrical safety.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-custom flex flex-col items-center">
+                    <span class="material-symbols-outlined text-white mb-8 text-4xl">apartment</span>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Commercial</h3>
+                    <p class="text-xs text-white/70 leading-relaxed">Energy management and protection for modern
+                        workspaces.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-custom flex flex-col items-center">
+                    <span class="material-symbols-outlined text-white mb-8 text-4xl">domain</span>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Infrastructure</h3>
+                    <p class="text-xs text-white/70 leading-relaxed">Scalable stability for evolving public utility
+                        grids.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-custom flex flex-col items-center">
+                    <span class="material-symbols-outlined text-white mb-8 text-4xl">factory</span>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4">Industrial</h3>
+                    <p class="text-xs text-white/70 leading-relaxed">High-capacity regulation for sensitive production
+                        machinery.</p>
+                </div>
+            </div>
+            <p class="text-white font-semibold">One corporate philosophy. Multiple user needs. One standard of
+                engineering.</p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-[12px] uppercase font-bold text-primary mb-4 block tracking-widest">Manufacturing &
+                    Quality</span>
+                <h2 class="text-4xl font-bold mb-6 text-white">Engineered with Precision. Manufactured with Discipline.
+                </h2>
+                <p class="text-slate-400 text-sm uppercase font-bold tracking-widest">KESSEY operates a controlled
+                    manufacturing setup focused on:</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white/5 p-8 rounded-custom flex items-center border border-white/10">
+                        <span
+                            class="material-symbols-outlined text-primary text-3xl mr-5">precision_manufacturing</span>
+                        <span class="text-xs font-bold uppercase tracking-wide">Precision Assembly</span>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-custom flex items-center border border-white/10">
+                        <span class="material-symbols-outlined text-primary text-3xl mr-5">settings_suggest</span>
+                        <span class="text-xs font-bold uppercase tracking-wide">Process Consistency</span>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-custom flex items-center border border-white/10">
+                        <span class="material-symbols-outlined text-primary text-3xl mr-5">checklist</span>
+                        <span class="text-xs font-bold uppercase tracking-wide">Multi-stage Testing</span>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-custom flex items-center border border-white/10">
+                        <span class="material-symbols-outlined text-primary text-3xl mr-5">verified_user</span>
+                        <span class="text-xs font-bold uppercase tracking-wide">Performance Validation</span>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-12 rounded-custom flex flex-col justify-center border border-white/10">
+                    <p class="text-2xl italic text-slate-300 font-medium border-l-4 border-primary pl-8">
+                        "Quality is not an inspection step. It is embedded into design, manufacturing, and testing."
                     </p>
                 </div>
-                <div class="card">
-                    <h3 style="margin-bottom: 12px; color: var(--primary);">Innovation</h3>
-                    <p>Continuous evolution of our manufacturing processes to meet the demands of tomorrow's technology.
-                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span
+                        class="text-[12px] uppercase font-bold text-slate-400 mb-4 block tracking-widest">Leadership</span>
+                    <h2 class="text-5xl font-bold mb-8 leading-tight">Leadership Driven by Engineering & Market Insight
+                    </h2>
+                    <p class="text-slate-500 mb-12">Led by industry veterans with deep cross-functional expertise across
+                        the entire power distribution chain.</p>
+                    <div class="space-y-8">
+                        <p class="text-sm font-bold text-slate-600 uppercase tracking-widest">KESSEY is led by
+                            professionals with deep experience across:</p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-center text-slate-500"><span
+                                    class="w-2 h-2 bg-primary rounded-full mr-4"></span>Electrical engineering</li>
+                            <li class="flex items-center text-slate-500"><span
+                                    class="w-2 h-2 bg-primary rounded-full mr-4"></span>Project management</li>
+                            <li class="flex items-center text-slate-500"><span
+                                    class="w-2 h-2 bg-primary rounded-full mr-4"></span>Manufacturing operations</li>
+                            <li class="flex items-center text-slate-500"><span
+                                    class="w-2 h-2 bg-primary rounded-full mr-4"></span>Sales and distribution</li>
+                        </ul>
+                        <button class="btn-primary">About Kessey</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 style="margin-bottom: 12px; color: var(--primary);">Reliability</h3>
-                    <p>Building trust through consistent quality and high-performance technical support.</p>
+                <div>
+                    <img alt="Leadership Team" class="rounded-custom grayscale object-cover shadow-2xl h-[600px] w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGA0lgzxWit8dTo-eP8_uAr8JP1k57Mi81umkL4py8rfAuzVrk0TCzkRY1OqznxIln4nqCVU60ntmAeiouGMOH-ucw7GTcH0e_hM38aT8A77ZcjGsuaL--pjKfmCR8ljYLooRnE49_dTyfc8GJpHP7WiizBbEQ5oP2mqHGwJpqblPN0p8WM0GVC6mhTn-rHVKxgEpXs5z30G_J8Ydv--OiORN_1awupawK4RWIy6H6t4CLFNhbUPi1DN7PG-9iDlQyERuMCI000PI" />
                 </div>
             </div>
         </div>
     </section>
 
-    <style>
-        .card {
-            background: white;
-            padding: 24px;
-            border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            border-top: 4px solid var(--primary);
-        }
-    </style>
-
-    <section id="ecosystem">
-        <div class="container">
-            <h2 style="text-align: center;">Our Ecosystem</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto var(--sp-12);">A holistic integration of
-                technical expertise and manufacturing excellence.</p>
-            <div class="ecosystem-grid">
-                <div class="eco-item">
-                    <h4 style="margin-bottom: 8px;">Technical Support</h4>
-                    <p style="font-size: 16px;">Dedicated engineering teams providing 24/7 technical oversight.</p>
-                </div>
-                <div class="eco-item">
-                    <h4 style="margin-bottom: 8px;">Supply Chain</h4>
-                    <p style="font-size: 16px;">End-to-end logistics optimized for high-demand technical components.</p>
-                </div>
-                <div class="eco-item">
-                    <h4 style="margin-bottom: 8px;">R&D Hub</h4>
-                    <p style="font-size: 16px;">Advanced laboratory for stress-testing and material innovation.</p>
-                </div>
-                <div class="eco-item">
-                    <h4 style="margin-bottom: 8px;">Compliance</h4>
-                    <p style="font-size: 16px;">Rigorous adherence to global engineering and safety standards.</p>
-                </div>
-            </div>
+    <footer class="pt-24 pb-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <img alt="Kessey Technologies Logo" class="h-12 mx-auto mb-8"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKumdyyuYapP5VSt-UUzKJTT6WifBL5ynEqhQBz4Q3qORFjZyDSart-lNVvTqTpVNXEILppF7oPbidDcgoRy8DuQOfEnnefvJwiKdbOsTPgsnGKBmgAhDE9kXNMfG81RZexPUeTv4XXo7aoARDeyhytKm7o9HkcRG39ts9BupJkvYFkPF_des-U7p8gJ1CvsOVOj5bknqqAxeuk2Xb_Zc0OSEuiSVST_uDUH2UFUSi8fXSX74_ey5tTfl4AuIv5i272FLPgUWK210" />
+            <p class="text-sm text-slate-400 font-bold uppercase tracking-widest">© 2026 Kessey Technologies Pvt. Ltd.
+                All rights reserved.</p>
         </div>
-    </section>
-
-    <section id="manufacturing" style="background-color: #f4f7fa;">
-        <div class="container mfg-container">
-            <div class="mfg-text">
-                <h2>Precision Manufacturing</h2>
-                <p>Our state-of-the-art facilities utilize the latest in automated precision machining and ethical
-                    assembly lines.</p>
-                <div class="mfg-stats">
-                    <div class="stat-box">
-                        <span class="stat-num">99.9%</span>
-                        <span style="font-size: 14px; color: #777;">Quality Accuracy</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num">24k</span>
-                        <span style="font-size: 14px; color: #777;">Monthly Output</span>
-                    </div>
-                </div>
-            </div>
-            <div style="flex: 1;">
-                <img src="https://images.unsplash.com/photo-1565173293559-001099f69293?auto=format&fit=crop&q=80&w=800"
-                    alt="Manufacturing Plant" style="width: 100%; border-radius: 6px;">
-            </div>
-        </div>
-    </section>
-
-    <section id="leadership">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 60px;">Executive Leadership</h2>
-            <div class="leaders-grid">
-                <div class="leader-card">
-                    <div class="leader-photo">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400"
-                            alt="John Doe">
-                    </div>
-                    <h4>Dr. Arjun Mehta</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 14px;">Chief Executive Officer</p>
-                </div>
-                <div class="leader-card">
-                    <div class="leader-photo">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400"
-                            alt="Jane Smith">
-                    </div>
-                    <h4>Sarah Jenkins</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 14px;">Head of Engineering</p>
-                </div>
-                <div class="leader-card">
-                    <div class="leader-photo">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400"
-                            alt="Mike Ross">
-                    </div>
-                    <h4>Vikram Singh</h4>
-                    <p style="color: var(--primary); font-weight: 600; font-size: 14px;">Operations Director</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="footer" style="padding: 40px 0; border-top: 1px solid #eee;">
-        <div class="container" style="text-align: center;">
-            <p>&copy; 2026 Kessey Technologies Pvt. Ltd. All rights reserved.</p>
-        </div>
-    </section>
+    </footer>
 </body>
 
 </html>
