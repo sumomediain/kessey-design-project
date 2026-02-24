@@ -7,17 +7,17 @@
     --bg-white: #FFFFFF;
     --text-primary: #444444;
     --link-color: #2373B4;
-    
+
     /* Typography */
     --font-main: 'Poppins', sans-serif;
     --h1-size: 66px;
     --h2-size: 64px;
     --body-size: 18px;
-    
+
     /* Spacing & Borders */
     --base-unit: 4px;
     --border-radius: 6px;
-    
+
     /* Derived Spacing */
     --sp-1: calc(var(--base-unit) * 1);
     --sp-2: calc(var(--base-unit) * 2);
@@ -128,7 +128,7 @@ nav {
     display: flex;
     align-items: center;
     min-height: 80vh;
-    padding-top: var(--sp-8);
+    padding: var(--sp-16) 0;
 }
 
 .hero-content {
@@ -144,5 +144,89 @@ nav {
 .hero-image img {
     max-width: 100%;
     border-radius: var(--border-radius);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Ecosystem Section */
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--sp-6);
+    margin-top: var(--sp-12);
+}
+
+.eco-item {
+    padding: var(--sp-6);
+    background: #f8fafd;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary);
+}
+
+/* Manufacturing Section */
+.mfg-container {
+    display: flex;
+    gap: var(--sp-12);
+    align-items: center;
+    background: #fdfdfd;
+}
+
+.mfg-text {
+    flex: 1;
+}
+
+.mfg-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4);
+    margin-top: var(--sp-8);
+}
+
+.stat-box {
+    padding: var(--sp-4);
+    background: white;
+    border: 1px solid #eee;
+    border-radius: var(--border-radius);
+}
+
+.stat-num {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Leadership Section */
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--sp-8);
+}
+
+.leader-card {
+    text-align: center;
+}
+
+.leader-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #eee;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--sp-4);
+    overflow: hidden;
+}
+
+.leader-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.leader-card:hover .leader-photo img {
+    filter: grayscale(0%);
+}
+
+:root {
+    --sp-6: calc(var(--base-unit) * 6);
 }
